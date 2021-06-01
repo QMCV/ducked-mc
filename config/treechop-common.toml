@@ -12,8 +12,8 @@
 		canBeTrue = true
 
 	[permissions.sneakBehavior]
-		canBeNone = true
 		canBeInvertFelling = true
+		canBeNone = true
 		canBeInvertChopping = true
 
 	[permissions.treeMustHaveLeaves]
@@ -92,6 +92,14 @@
 			#- Items in this list that have special support for TreeChop will not be overridden; see https://github.com/hammertater/treechop/blob/main/docs/compatibility.md#overrides
 			#- This might not work as expected for some items; see https://github.com/hammertater/treechop/blob/main/docs/compatibility.md#caveats
 			items = ["#tconstruct:modifiable/harvest", "silentgear:saw?chops=3,override=always"]
+
+		#The chop settings used by non-player entities, such as robots
+		[compatibility.general.fakePlayerChopSettings]
+			#Use with caution! May cause conflicts with some mods, e.g. https://github.com/hammertater/treechop/issues/71
+			choppingEnabled = false
+			#Felling only matters if chopping is enabled; probably best to leave this on
+			fellingEnabled = true
+			treesMustHaveLeaves = true
 
 	[compatibility.specific]
 		#Whether to enable compatibility with ProjectMMO; for example, award XP for chopping

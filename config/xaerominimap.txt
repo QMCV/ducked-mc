@@ -1,12 +1,12 @@
 #CONFIG ONLY OPTIONS
-ignoreUpdate:290
+ignoreUpdate:0
 updateNotification:true
 settingsButton:false
 allowWrongWorldTeleportation:false
 differentiateByServerAddress:true
 debugEntityIcons:false
 #INGAME SETTINGS (DO NOT EDIT!)
-minimap:false
+minimap:true
 caveMaps:2
 caveZoom:1
 showPlayers:true
@@ -22,8 +22,8 @@ displayRedstone:true
 deathpoints:true
 oldDeathpoints:true
 distance:1
-showCoords:true
-lockNorth:false
+showCoords:false
+lockNorth:true
 zoom:0
 minimapSize:0
 entityAmount:1
@@ -103,7 +103,7 @@ renderAllSets:false
 playerArrowOpacity:100
 ignoreHeightmaps:false
 waypointsBottom:false
-minimapShape:0
+minimapShape:1
 lightOverlayType:0
 lightOverlayMaxLight:7
 lightOverlayMinLight:0
@@ -115,9 +115,10 @@ minimapFrame:0
 minimapFrameColor:9
 compassColor:9
 itemFramesOnRadar:false
-interface:dummy:0:36:true:false:false:false
-interface:dummy:0:10000:true:false:false:false
+showDimensionName:false
 interface:dummy:0:0:false:false:true:false
-interface:dummy:0:36:true:false:false:false
+interface:dummy:0:135:false:false:false:false
+interface:dummy:120:0:true:false:false:false
+interface:dummy:0:50:true:false:false:false
 interface:gui.xaero_minimap:0:0:false:false:true:false
 #WAYPOINTS HAVE BEEN MOVED TO /XaeroWaypoints
